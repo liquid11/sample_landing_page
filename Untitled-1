@@ -1,0 +1,16 @@
+Hi Arsalan,
+
+I spoke with Umair last week about easing some of the website workload you guys have at the moment. There are a few things I think we need to look at in order to get the site up to speed from an SEO perspective.
+
+I've been running things through Moz's On-page Grader and Google's PageSpeed Insights, and we've a few problems with performance effecting our SEO.  I've a list of things that need to be looked at, but I was hoping that we could clear up some of the unnecessary resources on Joomla first.
+
+
+Is it possible to have a fresh start with only the necessary html, css, images and libraries? We've a few duplicate pages and fonts for example, and resources that need to be compressed, minified and/or cached, and it's much harder when they're not clearly visible. 
+
+Let me know what your thoughts are on how we can structure the content on Joomla, because I think we can make things a bit easier moving forward.
+
+Thanks,
+
+Nick
+
+

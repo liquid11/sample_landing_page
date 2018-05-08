@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Solar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <script src="main.js"></script>
+</head>
+<style>
+    body {
+
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+    }
+
+    .header {
+        margin: 0 auto;
+        background: #88D498;
+
+        height: 80px;
+        padding: 0px 30px;
+    }
+
+    .header .header-left {
+        float: left;
+        height: 80px;
+    }
+
+    li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+
+
+    .menu li {
+        display: inline;
+        padding-right: 20px;
+    }
+
+    .main .header .header-right {
+
+        float: right;
+        margin-top: 23px;
+
+    }
+
+    .hero {
+        background-color: #04A777;
+    }
+
+    .hero-banner {
+        margin: 0 auto;
+        max-width: 440px;
+    }
+
+    .hero-banner h1 {
+        padding-top: 177px;
+        font-size: 64px;
+        line-height: 81px;
+    }
+
+    .hero-banner-para {
+        padding-top: 40px;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .hero-banner-btn {
+
+        padding-top: 90px;
+        padding-bottom: 271px;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 10px;
+        max-width: 160px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 19px;
+        border-radius: 5px;
+        border: 2px solid #FFFFFF;
+        color: #FFFFFF;
+        background: transparent;
+    }
+
+    .app-showcase {
+        overflow: hidden;
+        padding-left: 70px;
+    }
+
+    .wrapper-app-showcase {
+        max-width: 1165px;
+        margin: 0 auto;
+    }
+
+    .app-showcase h3 {
+
+        padding-bottom: 40px;
+        padding-top: 43px;
+        font-size: 30px;
+        line-height: 46px;
+        text-align: Left;
+        color: #333333;
+    }
+
+    .app-showcase-left {
+
+        max-width: 450px;
+        float: left;
+
+    }
+
+    .app-showcase-left .para-faint {
+
+        color: #999999;
+        font: 20px;
+
+    }
+
+    .app-showcase-left .para-default {
+        padding-top: 63px;
+        color: #333333;
+        font: 20px;
+        line-height: 30px;
+    }
+
+    .app-showcase-btn-div {
+
+        padding-top: 97px;
+    }
+
+    .btn-convert {
+        background-color: #FF3654;
+    }
+
+    .app-showcase-right {
+        float: right;
+    }
+
+
+    .three-col-container {
+        background: #3654;
+        overflow: hidden;
+        padding-bottom: 59px;
+    }
+
+    .three-col-container .three-col-wrapper {
+
+        overflow: hidden;
+        padding-top: 30px;
+        font-size: 20px;
+        line-height: 23px;
+        margin: 0 auto;
+        width: 1200px;
+    }
+
+    .three-col-container .three-col-wrapper>div {
+        float: left;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .three-col-container .three-col-wrapper>div>p {
+        /* float: left;
+        width: 100%;
+        max-width: 400px; */
+        padding-left: 12px;
+    }
+
+    .three-col-container .three-col-wrapper h4 {
+        font-size: 36px;
+        padding-bottom: 20px;
+        padding-left: 11px;
+    }
+
+    .three-col-container .three-col-wrapper .btn-padding {
+
+        /* text-align: right; */
+        padding-top: 70px;
+        /* display: block; */
+        /* margin: 0 auto; */
+    }
+
+
+    .three-col-container .three-col-wrapper .btn-padding button {
+        display: block;
+        margin: 0 auto;
+
+    }
+
+
+    .grey-block {
+        text-align: center;
+    }
+
+    .grey-block p {
+
+        background-color: #2D2D2A;
+        font-size: 40px;
+        color: #FFFFFF;
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+
+    .split {
+
+        background-color: #04A777;
+        padding-top: 100px;
+        padding-bottom: 70px;
+        overflow: hidden;
+        /* width: 100%; */
+    }
+
+
+    .split-wrapper {
+
+        max-width: 1165px;
+        margin: 0 auto;
+    }
+
+    .split .split-left {
+
+        float: left;
+        max-width: 500px;
+    }
+
+    .split .split-right {
+        float: right;
+        max-width: 50%;
+        max-width: 500px;
+    }
+
+    .split .split-left h4 {
+
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .split .split-right h4 {
+
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .split .split-left p {
+
+        font-size: 20px;
+        line-height: 23px;
+        padding-top: 30px;
+        /* width: 70%; */
+    }
+
+    .split .split-right p {
+        font-size: 20px;
+        line-height: 23px;
+        padding-top: 30px;
+    }
+
+    .split .split-wrapper .btn-padding {
+
+        padding-top: 70px;
+    }
+
+    .split .split-wrapper .btn-padding button {
+
+        display: block;
+        margin: 0 auto;
+    }
+
+    .btn-green {
+        background-color: #04A777;
+    }
+
+    .btn-padding-right {
+        padding-right: 20px;
+
+    }
+
+    .footer {
+        color: #333333;
+        padding-top: 70px;
+        /* padding: 135px; */
+        padding-bottom: 70px;
+        line-height: 30px;
+        overflow: hidden;
+    }
+
+
+    .footer .footer-wrapper {
+        max-width: 1165px;
+        margin: 0 auto;
+
+    }
+
+    .footer .footer-left {
+        float: left;
+        max-width: 303px
+    }
+
+    .footer .footer-right {
+
+        float: right;
+        padding-left: 12px;
+        width: 500px;
+    }
+
+    .footer .footer-left h5 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer .footer-right .footer-col-1 {
+
+        width: 60px;
+        /* float: left; */
+    }
+
+    .footer .footer-right .footer-col-2 {
+
+        width: 60px;
+        padding-left: 100px;
+    }
+
+    .footer .footer-right .footer-col-3 {
+
+        width: 60px;
+        padding-left: 100px;
+    }
+
+    .footer .footer-right div {
+
+        display: inline-block;
+    }
+
+    .footer .footer-right li a {
+        color: #333333;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <!-- header start here -->
+        <div class="header">
+            <div class="header-left">
+                <img src="./assets/Logo_Small.png" alt="Logo_Small">
+            </div>
+            <div class="header-right">
+
+                <ul class="menu">
+                    <li>
+                        <a class="active" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#news">News</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- header end here -->
+        <!-- hero banner start here -->
+        <div class="hero">
+            <div class="hero-banner">
+                <h1>IN A GALAXY FAR, FAR AWAY</h1>
+                <div class="hero-banner-para">
+                    <p>Ready are you? What know you of ready? For eight hundred years have I trained Jedi. My own counsel will
+                        I keep on who is to be trained. A Jedi must have the deepest commitment, the most serious mind.
+                    </p>
+                </div>
+                <div class="hero-banner-btn">
+                    <button class="btn">Ready</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- hero banner end here -->
+
+        <!-- app-showcase start here -->
+
+        <div class="app-showcase">
+            <h3>You should know better than to trust a strange computer</h3>
+            <div>
+                <div class="app-showcase-left">
+                    <div class="para-faint">
+                        <p>Insert interesting catchy fact here</p>
+                    </div>
+                    <div class="para-default">
+                        <p>It’s unrealistic to expect the user to be ready to convert after reading only that first hero section;
+                            they’re going to want to know more about your service before committing to it and this is the
+                            ideal opportunity to write a heartfelt, honest message to your customers about why they should
+                            choose you over anybody else - use this space wisely, young one.</p>
+                    </div>
+                    <div class="app-showcase-btn-div">
+                        <button class="btn btn-convert">Convert now</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="app-showcase-right">
+                    <img src="./assets/app-mockup.png" width="600" alt="app_mockup">
+                </div>
+            </div>
+        </div>
+        <!-- app-showcase ends here -->
+
+        <!-- three columns start here -->
+
+        <div class="three-col-container">
+            <div class="three-col-wrapper">
+                <div class="col-one">
+                    <h4>Heading</h4>
+                    <p>What makes this section so interesting is that there’s lots of whitespace up top to include a subtle
+                        background image that further clarifies your reasons to convert. Fear leads to anger. Anger leads
+                        to hate. Hate leads to conversions.</p>
+
+                    <div class="btn-padding">
+                        <button class="btn btn-convert btn-green">Convert now</button>
+                    </div>
+                </div>
+                <div class="col-two">
+                    <h4>Heading</h4>
+                    <p>What makes this section so interesting is that there’s lots of whitespace up top to include a subtle
+                        background image that further clarifies your reasons to convert. Fear leads to anger. Anger leads
+                        to hate. Hate leads to conversions.</p>
+                    <div class="btn-padding">
+                        <button class="btn btn-convert btn-green">Convert now</button>
+                    </div>
+                </div>
+                <div class="col-three">
+                    <h4>Heading</h4>
+                    <p>What makes this section so interesting is that there’s lots of whitespace up top to include a subtle
+                        background image that further clarifies your reasons to convert. Fear leads to anger. Anger leads
+                        to hate. Hate leads to conversions.</p>
+                    <div class="btn-padding">
+                        <button class="btn btn-convert btn-green">Convert now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- three columns end here -->
+
+        <!-- grey Block start here -->
+
+        <div class="grey-block">
+            <p>Not convinced? Here's twopio reasons...</p>
+        </div>
+
+        <!-- Grey Block end here -->
+
+        <!-- split start here -->
+        <div class="split">
+
+            <div class="split-wrapper">
+                <div class="split-left">
+
+                    <h4>Heading</h4>
+                    <p>What makes this section so interesting is that there’s lots of whitespace up top to include a subtle
+                        background image that further clarifies your reasons to convert. Fear leads to anger. Anger leads
+                        to hate. Hate leads to conversions.</p>
+
+                    <div class="btn-padding">
+                        <button class="btn btn-convert btn-green">Convert now</button>
+                    </div>
+                </div>
+                <div class="split-right">
+
+                    <h4>Heading</h4>
+                    <p>Yeeeah, anyway, that’s what these blocks are about - 2 smashing reasons to buy or subscribe to your service
+                        followed by, of course, a conversion button. If you need more reasons, then maybe the 3x2 block would
+                        be better.</p>
+
+                    <div class="btn-padding btn-padding-right">
+                        <button class="btn btn-convert btn-green">Convert now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- split end here -->
+
+        <!-- footer start here -->
+
+        <div class="footer">
+            <div class="footer-wrapper">
+                <div class="footer-left">
+                    <div>
+                        <h5>Footnotes</h5>
+                        <p>Footnotes You don’t have to end this here. You can add sections, remove sections, or swap them out
+                            from the alternative layouts to your left or right. Good luck!</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-col-1">
+                        <p>Nav</p>
+                        <ul>
+                            <li>
+                                <a href="#">Help</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-2">
+                        <p>Other</p>
+                        <ul>
+                            <li>
+                                <a href="#">Yoda</a>
+                            </li>
+                            <li>
+                                <a href="#">Obi-Wan</a>
+                            </li>
+                            <li>
+                                <a href="#">Anakin</a>
+                            </li>
+                            <li>
+                                <a href="#">Qui-Gon</a>
+                            </li>
+                            <li>
+                                <a href="#">Mace</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <p>Social</p>
+                        <ul>
+                            <li>
+                                <a href="#">Pinterest</a>
+                            </li>
+                            <li>
+                                <a href="#">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#">Flickr</a>
+                            </li>
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer end here -->
+    </div>
+</body>
+
+</html>
